@@ -34,42 +34,54 @@ function App() {
         <div class="row">
           <div class="col-md-2">
               <h2>Tags</h2>
-              <p>HTML is the standard markup language for describing the structure of the web pages. Our HTML tutorials will help you to understand the basics of latest HTML5 language, so that you can create your own web pages or website.</p>
-              <p><a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank" class="btn btn-success">Learn More »</a></p>
+              <div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action active">
+        <i class="fa fa-home"></i> Home
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">
+        <i class="fa fa-camera"></i> Pictures <span class="badge badge-pill badge-primary pull-right">145</span>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">
+        <i class="fa fa-music"></i> Music <span class="badge badge-pill badge-primary pull-right">50</span>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">
+        <i class="fa fa-film"></i> Videos <span class="badge badge-pill badge-primary pull-right">8</span>
+    </a>
+</div>              
           </div>
           <div class="col-md-10">
               <div class="row">
                   <div class="col">
-                      <h2>New Note</h2>
-                      <p>CSS is used for describing the presentation of web pages. CSS can save a lot of time and effort. Our CSS tutorials will help you to learn the essentials of latest CSS3, so that you can control the style and layout of your website.</p>
-                      <p><a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank" class="btn btn-success">Learn More »</a></p>
+                    <div class="d-flex justify-content-center">
+                      <p><a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank" class="btn btn-success">New Note</a></p>
+                    </div>                      
                   </div>
               </div>
               <div class="row">
                   <div class="col">
-                      <div class="card-group">
-                          <div class="card">
+                    <div class="d-flex flex-wrap">
+                          <div class="card" style={{width:"300px"}}>
                               <div class="card-body text-center">
                                   <h5 class="card-title">Alice Liddel</h5>
                                   <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
                                   <a href="#" class="btn btn-primary">View Profile</a>
                               </div>
                           </div>
-                          <div class="card" >
+                          <div class="card" style={{width:"300px"}}>
                               <div class="card-body text-center">
                                   <h5 class="card-title">Alice Liddel</h5>
                                   <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
                                   <a href="#" class="btn btn-primary">View Profile</a>
                               </div>
                           </div>
-                          <div class="card" >
+                          <div class="card" style={{width:"300px"}} >
                               <div class="card-body text-center">
                                   <h5 class="card-title">Alice Liddel</h5>
                                   <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
                                   <a href="#" class="btn btn-primary">View Profile</a>
                               </div>
                           </div>    
-                          <div class="card" >
+                          <div class="card" style={{width:"300px"}} >
                               <div class="card-body text-center">
                                   <h5 class="card-title">Alice Liddel</h5>
                                   <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
