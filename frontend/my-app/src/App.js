@@ -83,16 +83,18 @@ function App() {
               </div>
               <div class="row">
                   <div class="col">
-                    <div class="d-flex flex-wrap">
-                          <div class="card mb-4" >
-                              <div class="card-body text-center ">
+                    <div class="d-flex justify-content-center flex-wrap">
+                          <div class="card mb-4 mr-4 align-self-start" style={{width: "400px"}}>
+                              <div class="card-body text-center " >
                                   <h5 class="card-title">Alice Liddel</h5>
-                                  <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
+                                  <p class="card-text">
+                                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.                                      
+                                  </p>
                                   <a href="#" class="btn btn-secondary">Edit</a>
                                   &nbsp;<a href="#" class="btn btn-danger">Remove</a>
                               </div>
                           </div>
-                          <div class="card mb-4">
+                          <div class="card mb-4 align-self-start" style={{width: "400px"}}>
                               <div class="card-body text-center">
                                   <h5 class="card-title">Alice Liddel</h5>
                                   <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
@@ -100,15 +102,7 @@ function App() {
                                   &nbsp;<a href="#" class="btn btn-danger">Remove</a>
                               </div>
                           </div>
-                          <div class="card mb-4" >
-                              <div class="card-body text-center">
-                                  <h5 class="card-title">Alice Liddel</h5>
-                                  <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
-                                  <a href="#" class="btn btn-secondary">Edit</a>
-                                  &nbsp;<a href="#" class="btn btn-danger">Remove</a>
-                              </div>
-                          </div>
-                          <div class="card mb-4" >
+                          <div class="card mb-4" style={{width: "400px"}}>
                               <div class="card-body text-center">
                                   <h5 class="card-title">Alice Liddel</h5>
                                   <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
