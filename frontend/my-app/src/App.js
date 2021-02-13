@@ -51,34 +51,48 @@ function App() {
         </div>
         <div class="row">
           <div class="col-md-2">
-              <h2>Tags</h2>
-              <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action active">
-                    <i class="fa fa-home"></i> Home
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa fa-camera"></i> Pictures <span class="badge badge-pill badge-primary pull-right">145</span>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa fa-music"></i> Music <span class="badge badge-pill badge-primary pull-right">50</span>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa fa-film"></i> Videos <span class="badge badge-pill badge-primary pull-right">8</span>
-                </a>
+            <div class="card mb-4">
+                <div class="card-header">Tags</div>
+                <div class="list-group list-group-flush">
+                        <a href="#" class="list-group-item list-group-item-action active">
+                            <i class="fa fa-home"></i> Home
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fa fa-camera"></i> Pictures <span class="badge badge-pill badge-primary pull-right">145</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fa fa-music"></i> Music <span class="badge badge-pill badge-primary pull-right">50</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fa fa-film"></i> Videos <span class="badge badge-pill badge-primary pull-right">8</span>
+                        </a>
+                    </div>              
+                <div class="card-body">
+                </div>
             </div>              
           </div>
           <div class="col-md-10">
               <div class="row">
                   <div class="col">
-                    <div class="d-flex justify-content-center">
-                    <a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">New Note</a>
-                    </div>                      
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">New Note</a>
+                        </div>
+                    </div>  
                   </div>
               </div>
               <div class="row">
                   <div class="col">
                     <div class="d-flex flex-wrap">
-                          <div class="card" style={{width:"300px"}}>
+                          <div class="card mb-4" >
+                              <div class="card-body text-center ">
+                                  <h5 class="card-title">Alice Liddel</h5>
+                                  <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
+                                  <a href="#" class="btn btn-secondary">Edit</a>
+                                  &nbsp;<a href="#" class="btn btn-danger">Remove</a>
+                              </div>
+                          </div>
+                          <div class="card mb-4">
                               <div class="card-body text-center">
                                   <h5 class="card-title">Alice Liddel</h5>
                                   <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
@@ -86,7 +100,7 @@ function App() {
                                   &nbsp;<a href="#" class="btn btn-danger">Remove</a>
                               </div>
                           </div>
-                          <div class="card" style={{width:"300px"}}>
+                          <div class="card mb-4" >
                               <div class="card-body text-center">
                                   <h5 class="card-title">Alice Liddel</h5>
                                   <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
@@ -94,15 +108,7 @@ function App() {
                                   &nbsp;<a href="#" class="btn btn-danger">Remove</a>
                               </div>
                           </div>
-                          <div class="card" style={{width:"300px"}}>
-                              <div class="card-body text-center">
-                                  <h5 class="card-title">Alice Liddel</h5>
-                                  <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
-                                  <a href="#" class="btn btn-secondary">Edit</a>
-                                  &nbsp;<a href="#" class="btn btn-danger">Remove</a>
-                              </div>
-                          </div>
-                          <div class="card" style={{width:"300px"}}>
+                          <div class="card mb-4" >
                               <div class="card-body text-center">
                                   <h5 class="card-title">Alice Liddel</h5>
                                   <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
