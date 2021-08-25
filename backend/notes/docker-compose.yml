@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  postgres:
+    image: postgres:12.1
+    environment:
+      POSTGRES_PASSWORD: admin123
+    ports:
+      - "5432:5432"
+  notes:
+    depends_on:
+     - postgres
+    image: easynote/notes
+    ports:
+      - "8080:8080"
