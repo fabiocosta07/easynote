@@ -1,36 +1,40 @@
 package com.easynote.notes.model;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="notes")
 public class Note {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
+    @Column(name="title")
+    private String title;
+    @Column(name="content")
+    private String content;
 
-    public Note(String name, String email) {
-        this.name = name;
-        this.email = email;
+    public long getId() {
+        return id;
     }
 
-    private String name, email;
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                '}';
+    public void setId(long id) {
+        this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getEmail() {
-        return email;
+    public String getContent() {
+        return content;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setContent(String content) {
+        this.content = content;
     }
 }
