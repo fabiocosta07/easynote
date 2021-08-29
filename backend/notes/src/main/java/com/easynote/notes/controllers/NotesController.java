@@ -4,6 +4,8 @@ import com.easynote.notes.exceptions.NoteNofFoundException;
 import com.easynote.notes.model.Note;
 import com.easynote.notes.repository.NotesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collections;
@@ -31,14 +33,14 @@ public class NotesController {
     }
 
     @PutMapping(value = "/notes/{id}")
-    Note replaceNote(@RequestBody Note newNote, @PathVariable Long id){
+    ResponseEntity<Note> replaceNote(@RequestBody Note newNote, @PathVariable Long id){
         return notesRepository.findById(id).map(note -> {
             note.setTitle(newNote.getTitle());
             note.setContent(newNote.getContent());
-            return notesRepository.save(note);
+            return new ResponseEntity<>(notesRepository.save(note), HttpStatus.CREATED);
         } ).orElseGet(() -> {
             newNote.setId(id);
-            return notesRepository.save(newNote);
+            return new ResponseEntity<>(notesRepository.save(newNote), HttpStatus.OK);
         });
     }
 

@@ -14,6 +14,11 @@ public class Note {
     @Column(name="content")
     private String content;
 
+    public Note(String title, String content) {
+        this.title = title;
+        this.content = content;
+    }
+
     public long getId() {
         return id;
     }
