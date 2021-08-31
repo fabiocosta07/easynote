@@ -26,7 +26,7 @@ public class NotesController {
     Note one(@PathVariable Long id) {
         return notesRepository.findById(id).orElseThrow(() ->new NoteNofFoundException());
     }
-
+    @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping(value = "/notes")
     Note newNote(@RequestBody Note note) {
         return notesRepository.save(note);

@@ -15,3 +15,9 @@ services:
     image: easynote/notes
     ports:
       - "8080:8080"
+  my-node-app:
+    depends_on:
+     - notes
+    image: easynote/my-node-app
+    ports:
+      - "3000:3000"
