@@ -1,9 +1,10 @@
 import './MyForm.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function MyForm() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+  const [notes, setNotes] = useState([]);
 
   const handleSubmit = (evt) => {
       evt.preventDefault();
@@ -20,7 +21,14 @@ function MyForm() {
       })
       .then(res => res.json())
       .then(json => console.log(json));
-  } 
+  }
+  
+  useEffect( () =>  {
+    fetch('http://localhost:8080/notes')
+    .then(response => response.json())
+    .then(data => setNotes(data));
+  }, notes)
+
   return (
       <div className="center">
         <form onSubmit={handleSubmit} >
@@ -36,7 +44,7 @@ function MyForm() {
         </form>
         <p/>
         <div className="center">
-            tes
+            {notes.map( n =><p>{n.title}</p> )}            
         </div>
       </div>
   );
