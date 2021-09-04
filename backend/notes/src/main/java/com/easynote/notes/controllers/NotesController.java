@@ -17,24 +17,21 @@ public class NotesController {
     @Autowired
     NotesRepository notesRepository;
 
-    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping(value = "/notes")
     List<Note> all(){
         return notesRepository.findAll();
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/notes/{id}")
     Note one(@PathVariable Long id) {
         return notesRepository.findById(id).orElseThrow(() ->new NoteNofFoundException());
     }
-    @CrossOrigin(origins = "http://localhost:3000")
+
     @PostMapping(value = "/notes")
     Note newNote(@RequestBody Note note) {
         return notesRepository.save(note);
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
     @PutMapping(value = "/notes/{id}")
     ResponseEntity<Note> replaceNote(@RequestBody Note newNote, @PathVariable Long id){
         return notesRepository.findById(id).map(note -> {
@@ -47,7 +44,6 @@ public class NotesController {
         });
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
     @DeleteMapping("/notes/{id}")
     void deleteUser(@PathVariable Long id) {
         notesRepository.deleteById(id);
